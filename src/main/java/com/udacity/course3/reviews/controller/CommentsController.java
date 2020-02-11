@@ -15,7 +15,12 @@ import java.util.List;
 public class CommentsController {
 
     // TODO: Wire needed JPA repositories here
-
+    @Autowired
+    private CommentRepository commentRepository;
+    
+    @Autowired
+    private ReviewRepository reviewRepository;
+    
     /**
      * Creates a comment for a review.
      *
@@ -27,21 +32,41 @@ public class CommentsController {
      * @param reviewId The id of the review.
      */
     @RequestMapping(value = "/reviews/{reviewId}", method = RequestMethod.POST)
-    public ResponseEntity<?> createCommentForReview(@PathVariable("reviewId") Integer reviewId) {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+    public ResponseEntity<?> createCommentForReview(@PathVariable("reviewId") Integer reviewId, @RequestBody Comment oneComment) {
+        // throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        
+        Optional<Review> myOptionalReview = reviewRepository.findById(reviewId);
+        if (myOptionalReview.isPresent()) {
+            Review theReview = myOptionalReview.get();
+            oneComment.setReview(theReview);
+            commentRepository.save(oneComment);
+            
+            return new ResponseEntity<>("Comment added to Review.", HttpStatus.CREATED);
+        }
+        else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
     /**
      * List comments for a review.
      *
      * 2. Check for existence of review.
-     * 3. If review not found, return NOT_FOUND.
+     * 3. If review not found, return NOT_FOUND. >>> Throw Exception???
      * 4. If found, return list of comments.
      *
      * @param reviewId The id of the review.
      */
     @RequestMapping(value = "/reviews/{reviewId}", method = RequestMethod.GET)
     public List<?> listCommentsForReview(@PathVariable("reviewId") Integer reviewId) {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        // throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        Optional<Review> myOptionalReview = reviewRepository.findById(reviewId);
+        if (myOptionalReview.isPresent()) {
+            List<Comment> theComments = optionalReview.get().getComments();
+            return theComments;
+        }
+        else {
+            throw new HttpServerErrorException(HttpStatus.NOT_FOUND);
+        }
     }
 }
