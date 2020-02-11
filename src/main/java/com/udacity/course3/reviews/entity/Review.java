@@ -7,7 +7,7 @@ public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "review_id")
-    private Long reviewId;
+    private Integer reviewId;
 
     @Column(name = "review_text")
     private String reviewText;
@@ -28,11 +28,11 @@ public class Review {
         this.reviewText = reviewText;
     }
 
-    public Long getReviewId() {
+    public Integer getReviewId() {
         return reviewId;
     }
 
-    public void setReviewId(Long reviewId) {
+    public void setReviewId(Integer reviewId) {
         this.reviewId = reviewId;
     }
 
