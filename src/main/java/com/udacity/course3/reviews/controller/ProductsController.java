@@ -15,6 +15,8 @@ import java.util.List;
 public class ProductsController {
 
     // TODO: Wire JPA repositories here
+    @Autowired
+    private ProductRepository productRepository;
 
     /**
      * Creates a product.
@@ -24,11 +26,9 @@ public class ProductsController {
      */
     @RequestMapping(value = "/", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
-    public void createProduct() {
-
-
-
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+    public void createProduct(@RequestBody Product thisProduct) {
+        // throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        productRepository.save(thisProduct);
     }
 
     /**
@@ -38,8 +38,17 @@ public class ProductsController {
      * @return The product if found, or a 404 not found.
      */
     @RequestMapping(value = "/{id}")
-    public ResponseEntity<?> findById(@PathVariable("id") Integer id) {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+    public ResponseEntity<?> findById(@PathVariable("id") Integer productId) {
+        // throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        
+        Optional<Product> myOptionalProduct = productRepository.findById(productId);
+        if (myOptionalProduct.isPresent()) {
+            Product foundProduct = myOptionalProduct.get();
+            return new ResponseEntity<>(foundProduct, HttpStatus.OK);
+        }
+        else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
     /**
@@ -49,6 +58,7 @@ public class ProductsController {
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<?> listProducts() {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        // throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        return productRepository.findAll();
     }
 }
