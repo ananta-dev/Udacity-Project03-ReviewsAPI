@@ -1,7 +1,10 @@
 package com.udacity.course3.reviews.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="products")
@@ -10,37 +13,40 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
-    private Long productId;
+    private Integer productId;
 
-    @Column(name = "product_name")
-    private String productName;
+    @Column(name = "product_title")
+    private String productTitle;
 
     @Column(name = "product_desc")
     private String productDesc;
 
     @OneToMany(mappedBy = "product")
-    @JsonManageReference
+    @JsonManagedReference
     private List<Review> reviews = new ArrayList<>();
-    
-    public Product(String productName, String productDesc) {
-        this.productName = productName;
-        this productDesc = productDesc);
+
+    public Product() {
+    }
+
+    public Product(String productTitle, String productDesc) {
+        this.productTitle = productTitle;
+        this.productDesc = productDesc;
     }
     
-    public Long getProductId() {
+    public Integer getProductId() {
         return productId;
     }
 
-    public void setProductId(Long productId) {
+    public void setProductId(Integer productId) {
         this.productId = productId;
     }
 
-    public String getProductName() {
-        return productName;
+    public String getProductTitle() {
+        return productTitle;
     }
 
     public void setProductName(String productName) {
-        this.productName = productName;
+        this.productTitle = productName;
     }
 
     public String getProductDesc() {
