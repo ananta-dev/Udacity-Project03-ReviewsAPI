@@ -11,7 +11,7 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "comment_id")
-    private Long commentId;
+    private Integer commentId;
 
     @Column(name = "comment_text")
     private String commentText;
@@ -28,11 +28,11 @@ public class Comment {
         this.commentText = commentText;
     }
 
-    public Long getCommentId() {
+    public Integer getCommentId() {
         return commentId;
     }
 
-    public void setCommentId(Long commentId) {
+    public void setCommentId(Integer commentId) {
         this.commentId = commentId;
     }
 
