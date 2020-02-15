@@ -1,5 +1,7 @@
 package com.udacity.course3.reviews.controller;
 
+import com.udacity.course3.reviews.MongoDBRepository.MongoDBReviewRepository;
+import com.udacity.course3.reviews.document.MongoDBReview;
 import com.udacity.course3.reviews.entity.Product;
 import com.udacity.course3.reviews.entity.Review;
 import com.udacity.course3.reviews.repository.ProductRepository;
@@ -9,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,6 +28,9 @@ public class ReviewsController {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private MongoDBReviewRepository mongoDBReviewRepository;
 
     /**
      * Creates a review for a product.
@@ -47,6 +53,10 @@ public class ReviewsController {
             Product theProduct = myOptionalProduct.get();
             theReview.setProduct(theProduct);
             reviewRepository.save(theReview);
+
+            MongoDBReview mongoDBReview = new MongoDBReview(theReview);
+            mongoDBReviewRepository.save(mongoDBReview);
+
             return new ResponseEntity<>(theReview, HttpStatus.CREATED);
         }
         else
@@ -64,11 +74,24 @@ public class ReviewsController {
         // throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
 
         Optional<Product> myOptionalProduct = productRepository.findById(productId);
+
+        List<MongoDBReview> theMongoReviewList = new ArrayList<>();
         if (myOptionalProduct.isPresent()) {
-            List<Review> theList = reviewRepository.findReviewsByProduct(myOptionalProduct.get());
-            return new ResponseEntity<>(theList,HttpStatus.OK);
+            List<Review> theMySQLReviewList = reviewRepository.findReviewsByProduct(myOptionalProduct.get());
+            for (Review thisMySQLReview : theMySQLReviewList) {
+
+                /**
+                Optional<MongoDBReview> optionalMongoDBReview = mongoDBReviewRepository.findByReviewId(thisMySQLReview.getReviewId());
+                if (optionalMongoDBReview.isPresent()) {
+                    theMongoReviewList.add(optionalMongoDBReview.get());
+                } */
+
+                // the MongoDBReview should always be present if the mySQL review is present, so no need to check isPresent()
+                theMongoReviewList.add(mongoDBReviewRepository.findByReviewId(thisMySQLReview.getReviewId()).get());
+            }
+            return ResponseEntity.accepted().body(theMongoReviewList);
         }
         else
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return ResponseEntity.notFound().build();
     }
 }

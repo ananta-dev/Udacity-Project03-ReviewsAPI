@@ -1,5 +1,6 @@
 package com.udacity.course3.reviews.document;
 
+import com.udacity.course3.reviews.entity.Review;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Id;
@@ -10,6 +11,7 @@ import java.util.List;
 public class MongoDBReview {
 
     @Id
+    private String _id;
     private Integer reviewId;
     private String reviewText;
     private Integer reviewedProductId;
@@ -18,12 +20,14 @@ public class MongoDBReview {
     public MongoDBReview() {
     }
 
-    public MongoDBReview(Integer reviewId, String reviewText, Integer reviewedProductId, List<MongoDBComment> commentList) {
-        this.reviewId = reviewId;
-        this.reviewText = reviewText;
-        this.reviewedProductId = reviewedProductId;
-        this.commentList = commentList;
+    public MongoDBReview(Review review) {
+        this.reviewId = review.getReviewId();
+        this.reviewText = review.getReviewText();
+        this.reviewedProductId = review.getProduct().getProductId();
+        // this.commentList = review.getComments(); THIS DOES NOT WORK - it is a different class that we need
+        this.commentList = new ArrayList<>();
     }
+
 
     public Integer getReviewId() {
         return reviewId;
@@ -56,4 +60,10 @@ public class MongoDBReview {
     public void setCommentList(List<MongoDBComment> commentList) {
         this.commentList = commentList;
     }
+
+
+    public void addMongoDBComment(MongoDBComment mongoDBComment) {
+        this.commentList.add(mongoDBComment);
+    }
+
 }

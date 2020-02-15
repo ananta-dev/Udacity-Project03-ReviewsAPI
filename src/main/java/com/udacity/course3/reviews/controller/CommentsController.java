@@ -1,5 +1,8 @@
 package com.udacity.course3.reviews.controller;
 
+import com.udacity.course3.reviews.MongoDBRepository.MongoDBReviewRepository;
+import com.udacity.course3.reviews.document.MongoDBComment;
+import com.udacity.course3.reviews.document.MongoDBReview;
 import com.udacity.course3.reviews.entity.Comment;
 import com.udacity.course3.reviews.entity.Review;
 import com.udacity.course3.reviews.repository.CommentRepository;
@@ -26,6 +29,9 @@ public class CommentsController {
     
     @Autowired
     private ReviewRepository reviewRepository;
+
+    @Autowired
+    private MongoDBReviewRepository mongoDBReviewRepository;
     
     /**
      * Creates a comment for a review.
@@ -46,10 +52,19 @@ public class CommentsController {
             Review theReview = myOptionalReview.get();
             theComment.setReview(theReview);
             commentRepository.save(theComment);
-            return new ResponseEntity<>(theComment, HttpStatus.CREATED);
+
+            // Save to MongoDB review
+            MongoDBComment theMongoDBComment = new MongoDBComment(theComment.getCommentId(),theComment.getCommentText());
+            Optional<MongoDBReview> optionalMongoDBReview = mongoDBReviewRepository.findByReviewId(reviewId);
+            if (optionalMongoDBReview.isPresent()) {
+                MongoDBReview theMongoDBReview = optionalMongoDBReview.get();
+                theMongoDBReview.addMongoDBComment(theMongoDBComment);
+                mongoDBReviewRepository.save(theMongoDBReview);
+            }
+            return ResponseEntity.accepted().body(theMongoDBComment);
         }
         else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return ResponseEntity.notFound().build();
         }
     }
 

@@ -9,6 +9,6 @@ import java.util.Optional;
 public interface MongoDBReviewRepository extends MongoRepository<MongoDBReview, Integer> {
 
     Optional<MongoDBReview> findByReviewId(Integer reviewId);
-    List<MongoDBReview> findByProductId(Integer productId);
+    List<MongoDBReview> findByReviewedProductId(Integer reviewedProductId);
 
 }
