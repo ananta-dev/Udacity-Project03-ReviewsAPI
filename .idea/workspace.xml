@@ -3,19 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="95db6a4a-277d-4d59-b0a8-1efc21f57b0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/ReviewsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/ReviewsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/MongoDBReviewController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBReview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/ReviewsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/ReviewsApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/CommentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/CommentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/ReviewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/ReviewsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/udacity/course3/reviews/ReviewsApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/udacity/course3/reviews/ReviewsApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/document/MongoDBReview.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/document/MongoDBReview.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,28 +25,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="110">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -63,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBReview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -72,17 +45,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="2068">
               <caret line="94" selection-start-line="94" selection-end-line="94" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews/ReviewsApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="58" column="52" lean-forward="true" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
+            <state relative-caret-position="321">
+              <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -90,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBComment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="594">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -99,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/reflect/Method.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
+            <state relative-caret-position="11924">
               <caret line="565" selection-start-line="565" selection-end-line="565" />
             </state>
           </provider>
@@ -108,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1894">
+            <state relative-caret-position="2706">
               <caret line="137" selection-start-line="137" selection-end-line="137" />
             </state>
           </provider>
@@ -117,8 +99,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="1958">
               <caret line="103" selection-start-line="103" selection-end-line="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews/MongoDBTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -152,11 +143,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/ReviewsApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBComment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBReview.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews/MongoDBTests.java" />
       </list>
     </option>
   </component>
@@ -172,11 +164,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1726" />
-    <option name="y" value="-89" />
-    <option name="width" value="983" />
-    <option name="height" value="521" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-268" />
+    <option name="y" value="157" />
+    <option name="width" value="1382" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -187,6 +179,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,7 +303,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReviewsApplication">
+  <component name="RunManager" selected="JUnit.MongoDBTests.FindReviewsByProductIdTest">
     <configuration name="ReviewsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.udacity.course3.reviews.ReviewsApplication" />
       <module name="Project3-ReviewsAPI" />
@@ -343,6 +335,38 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoDBTests.CreateMongoDBReviewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project3-ReviewsAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.course3.reviews.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.course3.reviews" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.course3.reviews.MongoDBTests" />
+      <option name="METHOD_NAME" value="CreateMongoDBReviewTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoDBTests.FindReviewsByProductIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project3-ReviewsAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.course3.reviews.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.course3.reviews" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.course3.reviews.MongoDBTests" />
+      <option name="METHOD_NAME" value="FindReviewsByProductIdTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -358,38 +382,6 @@
       <option name="PACKAGE_NAME" value="com.udacity.course3.reviews" />
       <option name="MAIN_CLASS_NAME" value="com.udacity.course3.reviews.ReviewsApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewsApplicationTests.testCreateComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project3-ReviewsAPI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.udacity.course3.reviews.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.course3.reviews" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.course3.reviews.ReviewsApplicationTests" />
-      <option name="METHOD_NAME" value="testCreateComment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewsApplicationTests.testCreateReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project3-ReviewsAPI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.udacity.course3.reviews.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.course3.reviews" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.course3.reviews.ReviewsApplicationTests" />
-      <option name="METHOD_NAME" value="testCreateReview" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -412,11 +404,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MongoDBTests.FindReviewsByProductIdTest" />
+        <item itemvalue="JUnit.MongoDBTests.CreateMongoDBReviewTest" />
         <item itemvalue="Application.ReviewsApplication" />
         <item itemvalue="JUnit.ReviewsApplicationTests" />
         <item itemvalue="JUnit.ReviewsApplicationTests.testListProducts" />
-        <item itemvalue="JUnit.ReviewsApplicationTests.testCreateComment" />
-        <item itemvalue="JUnit.ReviewsApplicationTests.testCreateReview" />
       </list>
     </recent_temporary>
   </component>
@@ -434,15 +426,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReviewsApplicationTests_testListProducts - 2020.02.13 at 22h 03m 44s.xml">
-      <configuration name="ReviewsApplicationTests.testListProducts" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReviewsApplicationTests_testFindProductById - 2020.02.13 at 22h 06m 04s.xml">
-      <configuration name="ReviewsApplicationTests.testFindProductById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReviewsApplicationTests_testCreateProduct - 2020.02.13 at 22h 08m 57s.xml">
-      <configuration name="ReviewsApplicationTests.testCreateProduct" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReviewsApplicationTests_testCreateReview - 2020.02.13 at 22h 11m 35s.xml">
       <configuration name="ReviewsApplicationTests.testCreateReview" configurationId="JUnit" />
     </history-entry>
@@ -464,9 +447,18 @@
     <history-entry file="ReviewsApplicationTests - 2020.02.13 at 22h 21m 42s.xml">
       <configuration name="ReviewsApplicationTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MongoDBTests_CreateMongoDBReviewTest - 2020.02.16 at 09h 09m 50s.xml">
+      <configuration name="MongoDBTests.CreateMongoDBReviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoDBTests_CreateMongoDBReviewTest - 2020.02.16 at 09h 10m 47s.xml">
+      <configuration name="MongoDBTests.CreateMongoDBReviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoDBTests_CreateMongoDBReviewTest - 2020.02.16 at 09h 13m 54s.xml">
+      <configuration name="MongoDBTests.CreateMongoDBReviewTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1726" y="-89" width="983" height="521" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -474,7 +466,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.42578548" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.123298034" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -494,7 +486,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" x="-1917" y="-445" width="1914" height="1034" id="Run" order="8" type="FLOATING" weight="0.60287845" />
+      <window_info anchor="right" x="0" y="0" width="1366" height="728" id="Run" order="8" type="FLOATING" weight="0.60287845" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -604,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews/ReviewsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/entity/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -639,6 +624,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/MongoDBReviewController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -646,73 +632,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/MongoDBReviewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="1364">
           <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="2068">
           <caret line="94" selection-start-line="94" selection-end-line="94" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
+        <state relative-caret-position="11924">
           <caret line="565" selection-start-line="565" selection-end-line="565" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1894">
+        <state relative-caret-position="2706">
           <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="1958">
           <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBReview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="58" column="52" lean-forward="true" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
+        <state relative-caret-position="321">
+          <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/document/MongoDBReview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/MongoDBRepository/MongoDBReviewRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews/ReviewsApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews/MongoDBTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
