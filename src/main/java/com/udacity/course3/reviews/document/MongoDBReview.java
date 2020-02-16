@@ -13,13 +13,6 @@ public class MongoDBReview {
     @Id
     private String _id;
 
-    public String get_id() {
-        return _id;
-    }
-
-    public void set_id(String _id) {
-        this._id = _id;
-    }
 
     private Integer reviewId;
     private String reviewText;
@@ -27,6 +20,11 @@ public class MongoDBReview {
     private List<MongoDBComment> commentList = new ArrayList<>();
 
     public MongoDBReview() {
+    }
+
+    public MongoDBReview(Integer reviewId, String reviewText) {
+        this.reviewId = reviewId;
+        this.reviewText = reviewText;
     }
 
     public MongoDBReview(Review review) {
@@ -37,6 +35,13 @@ public class MongoDBReview {
         this.commentList = new ArrayList<>();
     }
 
+    public String get_id() {
+        return _id;
+    }
+
+    public void set_id(String _id) {
+        this._id = _id;
+    }
 
     public Integer getReviewId() {
         return reviewId;

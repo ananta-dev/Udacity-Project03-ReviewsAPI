@@ -1,5 +1,7 @@
 package com.udacity.course3.reviews;
 
+import com.mongodb.BasicDBObjectBuilder;
+import com.mongodb.DBObject;
 import com.udacity.course3.reviews.MongoDBRepository.MongoDBReviewRepository;
 import com.udacity.course3.reviews.document.MongoDBComment;
 import com.udacity.course3.reviews.document.MongoDBReview;
@@ -8,6 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
@@ -19,6 +22,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @DataMongoTest
 public class MongoDBTests {
+
+    @Autowired
+    MongoTemplate mongoTemplate;
 
     @Autowired
     private MongoDBReviewRepository mongoDBReviewRepository;
@@ -61,6 +67,39 @@ public class MongoDBTests {
         Assert.assertEquals(reviewList.size(), 1);
         Assert.assertEquals(reviewList.get(0).getCommentList().size(), 2);
         Assert.assertEquals(reviewList.get(0).getCommentList().get(0).getCommentText(), "It really is super nice");
+    }
+
+    @Test
+    public void injectedComponentsAreNotNull(){
+        assertThat(mongoDBReviewRepository).isNotNull();
+    }
+
+    @Test
+    public void test() {
+        // given
+        DBObject objectToSave = BasicDBObjectBuilder.start()
+                .add("key", "value")
+                .get();
+
+        // when
+        mongoTemplate.save(objectToSave, "reviews");
+
+        // then
+        assertThat(mongoTemplate.findAll(DBObject.class, "reviews")).isNotEmpty();
+    }
+
+    @Test
+    public void whenSaveReviewDocument_andFindItById() {
+        
+        Integer reviewId = 1000;
+        String reviewText = "The best product in the world";
+
+        MongoDBReview mongoDBReview = new MongoDBReview(reviewId, reviewText);
+
+        mongoDBReviewRepository.save(mongoDBReview);
+
+        assertThat(mongoDBReviewRepository.findByReviewId(reviewId)).isNotNull();
+
     }
 
 }
